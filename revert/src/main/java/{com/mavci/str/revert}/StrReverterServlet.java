@@ -21,7 +21,7 @@ public class StrReverterServlet extends HttpServlet{
 		resp.getWriter().write("<h2>"+str+"</h2>");
 	}
 	public String handleReq(HttpServletRequest req){
-		String str = req.getParameter("kelime");
+		String str = req.getParameter("input");
 		return reverseString(str);
 	}
 	public String reverseString(String str){
